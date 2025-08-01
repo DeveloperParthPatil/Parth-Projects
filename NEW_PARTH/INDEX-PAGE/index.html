@@ -36,7 +36,9 @@
             background-color: #272727;
             display: flex;
             position: fixed;
+
         }
+
 
         .head-one {
             width: 50%;
@@ -175,12 +177,11 @@
 
         .about {
             width: 100%;
-            height: 20%;
+            height: 40%;
             text-align: center;
             font-size: 60px;
             font-family: cursive;
             font-weight: 700;
-            padding-top: 30px;
             background-color: #272727;
             color: white;
             text-shadow: 3px 5px #57B4BA;
@@ -236,9 +237,10 @@
 
         /* About section End */
         /* Project Section Start */
+
         .project {
             width: 100%;
-            height: 20%;
+
             text-align: center;
             font-size: 60px;
             font-family: cursive;
@@ -290,6 +292,7 @@
             border-radius: 10%;
             border-width: 2px;
             border-color: #5DB996;
+            margin-top: 8%;
             background-color: #272727;
         }
 
@@ -299,44 +302,90 @@
             border-radius: 10%;
             border-width: 2px;
             border-color: #5DB996;
+            margin-top: 8%;
             background-color: #272727;
         }
 
         .image-3:hover {
-            box-shadow: 0.2px 0.2px 33px #57B4BA;
-            margin-bottom: 10%;
-
+            box-shadow: 0.2px 0.2px 35px #57B4BA;
+            margin-top: 1%;
         }
 
         .image-4:hover {
             box-shadow: 0.2px 0.2px 33px #57B4BA;
-            margin-bottom: 10%;
-
+            margin-top: 1%;
         }
 
         /*  Project Section End */
         /* Contact section Start */
         .main-container-conatact {
             width: 100%;
-            height: 80%;
-            background-color: #57B4BA;
+            height: 100%;
+            background-color: #272727;
+            padding-left: 5%;
+            padding-right: 5%;
+            padding-bottom: 5%;
+            padding-top: 10%;
+        }
+
+        .contact {
+            width: 100%;
+            text-align: center;
+            font-size: 60px;
+            font-family: cursive;
+            font-weight: 700;
+            background-color: #272727;
+            color: white;
+            text-shadow: 3px 5px #57B4BA;
+        }
+
+        .container-main {
+            width: 100%;
+            height: 100%;
+            background-color: #373A40;
+            padding-left: 5%;
+            padding-right: 5%;
+            padding-bottom: 5%;
+            padding-top: 10%;
+            border-radius: 5%;
+        }
+
+        .container-cont-one {
+            width: 100%;
+            height: 50%;
             display: flex;
         }
 
-        .container-one {
+        .contact-1 {
             width: 50%;
-            height: 100%;
-            background-color: #272727;
-            padding-left: 3%;
+            background-color: #00eeff;
+            border-radius: 6%;
         }
 
-        .container-two {
+        .contact-2 {
             width: 50%;
-            height: 100%;
-            background-color: #272727;
+            background-color: #1d5aeaa8;
+            border-radius: 6%;
         }
 
-      
+        .container-cont-two {
+            width: 100%;
+            height: 50%;
+            display: flex;
+
+        }
+
+        .contact-3 {
+            width: 50%;
+            background-color: #8f06ff;
+            border-radius: 6%;
+        }
+
+        .contact-4 {
+            width: 50%;
+            background-color: #004cffa8;
+            border-radius: 6%;
+        }
     </style>
 </head>
 
@@ -345,7 +394,7 @@
     <div class="main-container">
         <div class="header">
             <div class="head-one">
-                <div style="margin-top: 20px;" class="portfolio">
+                <div style="margin-top: 20px; margin-right: 10%;" class="portfolio">
                     <span>Parth Patil</span>
                 </div>
             </div>
@@ -379,17 +428,20 @@
                 </div>
             </div>
         </div>
+
+
         <!-- Home Section End -->
 
         <!-- About Section Start -->
-        <div class="about" id="About">
+
+        <div class="about" id="About"> <br>
             About Me
         </div>
         <div class="maincontainer">
             <div class="section-1">
                 <div class="sec-one">
                     <div class="image-2">
-                        <img src="../assets/images/portfolio-about-image.jpeg" width="100%" height="90%">
+                        <img src="../assets/images/portfolio-about-image.jpeg" width="100%" height="100%">
                     </div>
                 </div>
                 <div class="sec-two">
@@ -422,16 +474,17 @@
             </div>
 
         </div>
+
         <!-- About section end  -->
         <!-- Project Section Start -->
-        <div class="project" id="Project">
+        <div class="project" id="Project"> <br>
             My Projects
         </div>
         <div class="main-container-project">
             <div class="container">
                 <div class="project-one">
                     <a href="./html-projects.html">
-                        <img class="image-3" src="../assets/images/HTML.avif">
+                        <img class="image-3" src="../assets/images/HTML .avif">
                     </a>
                 </div>
                 <div class="project-two">
@@ -441,14 +494,22 @@
                 </div>
             </div>
         </div>
+
         <!-- Project Section End -->
         <!--  Contact section Start -->
-        <div class="contact" id="Contact"> Contact Me </div>
+        <div class="contact" id="Contact"> <br> Contact Me </div>
         <div class="main-container-conatact">
-            <div class="container-one">
+            <div class="container-main">
+                <div class="container-cont-one">
+                    <div class="contact-1"></div>
+                    <div class="contact-2"></div>
 
+                </div>
+                <div class="container-cont-two">
+                    <div class="contact-3"></div>
+                    <div class="contact-4"></div>
+                </div>
             </div>
-            <div class="container-two"></div>
         </div>
     </div>
 </body>
