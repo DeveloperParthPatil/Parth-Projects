@@ -20,6 +20,7 @@
 
         .project {
             height: 20%;
+            padding-top: 10%;
             font-size: 60px;
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
             font-weight: 500;
@@ -120,7 +121,7 @@
         button {
             width: 50%;
             font-size: 30px;
-            color:#00809D ;
+            color: #00809D;
             border-style: solid;
             border-width: 2px;
             border-color: #00809D;
@@ -133,22 +134,99 @@
         }
 
         button:hover {
-            background-color:transparent;
+            background-color: transparent;
             border-color: #129990;
             cursor: pointer;
             margin-bottom: 50%;
+        }
+
+        .header {
+            width: 100%;
+            background-color: #272727;
+            display: flex;
+            position: fixed;
+
+        }
+
+
+        .head-one {
+            width: 50%;
+            height: 60px;
+            background-color: #272727;
+        }
+
+        .portfolio {
+            color: white;
+            font-size: 30px;
+            margin-left: 120px;
+
+        }
+
+        .head-two {
+            width: 50%;
+            height: 60px;
+            margin-left: 200px;
+            background-color: #272727;
+            display: flex;
+            gap: 60px;
+
+        }
+
+        .home {
+            color: white;
+            background-color: antiquewhite;
+            font-size: 24px;
+            margin-top: 20px;
+            background-color: transparent;
+        }
+
+        .nav-bar-home {
+            width: 100%;
+            height: 2%;
+
+        }
+
+        .attribute:hover {
+            color: #5DB996;
+            margin-bottom: 100%;
+            text-decoration-line: underline;
+        }
+
+        .attribute {
+            color: white;
         }
     </style>
 </head>
 
 <body>
+    <div class="header">
+        <div class="head-one">
+            <div style="margin-top: 20px; margin-right: 10%;" class="portfolio">
+                <span>Parth Patil</span>
+            </div>
+        </div>
+        <!-- This is head Navigation -->
+        <div class="head-two">
+            <div class="home">
+                <a class="attribute" href="../INDEX-PAGE/index.html#Home">Home </a>
+            </div>
+            <div class="home">
+                <a class="attribute" href="../INDEX-PAGE/index.html#About">About</a>
+            </div>
+            <div class="home">
+                <a class="attribute" href="../INDEX-PAGE/index.html#Project">Project</a>
+            </div>
+            <div class="home">
+                <a class="attribute" href="../INDEX-PAGE/index.html#Contact">Contact</a>
+            </div>
+        </div>
+    </div>
     <div class="project">My CSS Project</div>
     <div class="main-container">
         <div class="container-one">
             <div class="card-one">
                 <div class="card-image">
-                    <img
-                        src="https://i.ytimg.com/vi/kRs3aTi3pzU/maxresdefault.jpg">
+                    <img src="https://i.ytimg.com/vi/kRs3aTi3pzU/maxresdefault.jpg">
                 </div>
                 <p class="name"> Product Gallery</p>
                 <p class="descript">Products are essential for both businesses and consumers. </p>
@@ -160,7 +238,8 @@
                         src="https://cdn.dribbble.com/userupload/17154627/file/original-444eb215abc1f61f1dbf9997fad57f3c.png?resize=752x&vertical=center">
                 </div>
                 <p class="name"> Student Portal</p>
-                <p class="descript">Student portals are crucial for modern education,  and managing administrative tasks.</p>
+                <p class="descript">Student portals are crucial for modern education, and managing administrative tasks.
+                </p>
                 <button> <a href="../CSS/FLEX/student-portal.html">View Project </a></button>
             </div>
             <div class="card-three">
@@ -169,18 +248,18 @@
                         src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT859HTxP3ymEgEuF3AXBEJdQq__2aI3QQBx0ByEKkV1HAu5g9Vuz76EtaQOZB6ZIrWovE&usqp=CAU">
                 </div>
                 <p class="name"> Weekly Calendar</p>
-                <p class="descript">Calendars are essential for organizing time, and planning events, both past and future.</p>
+                <p class="descript">Calendars are essential for organizing time, and planning events, both past and
+                    future.</p>
                 <button> <a href="../CSS/FLEX/weekly-calendar.html">View Project </a></button>
             </div>
         </div>
         <div class="container-two">
             <div class="card-one">
                 <div class="card-image">
-                    <img
-                        src="">
+                    <img src="">
                 </div>
                 <p class="name"> Report Card</p>
-                <p class="descript">Report cards  offer a structured evaluation of
+                <p class="descript">Report cards offer a structured evaluation of
                     academic performance of student.</p>
                 <button> <a href="../CSS/FLEX/ch">View Project </a></button>
             </div>
@@ -190,7 +269,8 @@
                         src="https://images.klipfolio.com/website/public/6f1b14b5-1d2d-4a30-ac82-30869ca03ba4/powermetrics-dashboard_0.jpg">
                 </div>
                 <p class="name"> Dashboard </p>
-                <p class="descript">Dashboards are important because they offer a  visual way to monitor key performance  indicators.</p>
+                <p class="descript">Dashboards are important because they offer a visual way to monitor key performance
+                    indicators.</p>
                 <button> <a href="../CSS/FLEX/dashboard.html">View Project </a></button>
             </div>
             <div class="card-three">
