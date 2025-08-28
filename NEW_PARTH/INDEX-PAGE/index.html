@@ -261,7 +261,6 @@
 
         .container {
             width: 100%;
-            height: 100%;
             background-color: #272727;
             display: flex;
             justify-content: space-around;
@@ -269,7 +268,7 @@
 
         .project-one {
             width: 50%;
-            height: 50%;
+            height: 100%;
             align-items: center;
             margin-top: 7%;
             margin-right: 10%;
@@ -278,7 +277,7 @@
 
         .project-two {
             width: 50%;
-            height: 50%;
+            height: 100%;
             align-items: center;
             margin-top: 7%;
             margin-right: 10%;
@@ -381,9 +380,10 @@
             display: flex;
 
         }
-           .container-cont-two:hover{
+
+        .container-cont-two:hover {
             margin-bottom: 10%;
-           }
+        }
 
         .contact-3 {
             width: 50%;
@@ -392,31 +392,22 @@
             border-radius: 6%;
             margin-right: 10%;
             margin-top: 5%;
-            padding: 2rem;
-    padding-top: 2rem;
-    padding-right: 2rem;
-    padding-bottom: 2rem;
-    padding-left: 2rem;
         }
- 
+
         .contact-4 {
             width: 50%;
             height: 80%;
             background-color: #004cffa8;
             border-radius: 6%;
             margin-top: 5%;
-            padding: 2rem;
-    padding-top: 2rem;
-    padding-right: 2rem;
-    padding-bottom: 2rem;
-    padding-left: 2rem;
         }
-        .container-1:hover{
-            margin-bottom: 10%;
+
+        .contact-1:hover {
+            box-shadow: 0.5px 0.5px 50px #57B4BA;
+          
 
         }
-        
-    </style>    
+    </style>
 </head>
 
 <body>
@@ -531,7 +522,13 @@
         <div class="main-container-conatact">
             <div class="container-main">
                 <div class="container-cont-one">
-                    <div class="contact-1"></div>
+                    <div class="contact-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
+                          </svg>
+                          
+                    </div>
                     <div class="contact-2"></div>
 
                 </div>
