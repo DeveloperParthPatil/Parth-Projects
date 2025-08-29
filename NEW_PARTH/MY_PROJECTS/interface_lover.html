@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Interface Lover </title>
+    <style>
+        body {
+            height: 100vh;
+            width: 100vw;
+            padding: 0;
+            margin: 0;
+            overflow-x: hidden;
+            background-color: #F2F2F2;
+        }
+
+        .main-container {
+            width: 100%;
+            height: 100%;
+        }
+
+        /* header-section-start */
+        .header-container {
+            height: 10%;
+            width: 100%;
+            background-color: #F2F2F2;
+            display: flex;
+            position: fixed;
+        }
+
+        .header-one {
+            width: 50%;
+
+        }
+
+        .header-name {
+            width: 38%;
+            height: 60%;
+            border-radius: 90px;
+            background-color: #090909;
+            display: flex;
+            align-items: center;
+            margin-top: 2%;
+            margin-left: 6%;
+        }
+
+        .header-two {
+            width: 50%;
+            background-color: #F2F2F2;
+
+        }
+
+        .nav-head-two {
+            background-color: #F2F2F2;
+            margin-left: 50%;
+            display: flex;
+            justify-content: space-around;
+            font-size: 20px;
+            color: black;
+            text-align: center;
+            margin-top: 3%;
+        }
+
+        /* Header section End  */
+        /* Home-section-start */
+        .home-main-container {
+            width: 100%;
+            height: 100%;
+            display: flex;
+        }
+
+        .home-section-one {
+            width: 65%;
+            height: 100%;
+            background-color: #c4d42b;
+        }
+
+        .home-section-one-1 {
+            width: 50%;
+            height: 37.70%;
+            margin-top: 13%;
+            background-color: #ffffff;
+            padding-top: 3%;
+            padding-left: 5%;
+            font-size: 17px;
+            font-weight: 200;
+        }
+
+        .home-section-two {
+            width: 35%;
+            height: 100%;
+            background-color: rgb(42, 139, 139);
+        }
+
+        .image-1 {
+            width: 100%;
+            height: 100%;
+
+        }
+
+        /* Home-section-end */
+        /* Interview Section start */
+        .interview-main-container {
+            width: 100%;
+            height: 100%;
+            background-color: #F2F2F2;
+        }
+
+        .interview-header {
+            width: 100%;
+            height: 10%;
+            background-color: #F2F2F2;
+            margin-top: 10%;
+            padding-left: 2%;
+            font-size: 20px;
+            font-weight: 700;
+        }
+
+        .interview-cards {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            gap: 20px;
+            background-color: #f2f2f2;
+            
+        }
+
+        .interview-card-1 {
+            width: 20%;
+            height: 70%;
+            background-color: #F2F2F2;
+            margin-left: 5%;
+        }
+
+        .interview-card-2 {
+            width: 20%;
+            height: 70%;
+            background-color: #F2F2F2;
+        }
+
+        .interview-card-3 {
+            width: 20%;
+            height: 70%;
+            background-color: #F2F2F2;
+        }
+
+        .interview-card-4 {
+            width: 20%;
+            height: 70%;
+            background-color: #F2F2F2;
+        }
+
+        .interview-card-5 {
+            width: 20%;
+            height: 70%;
+            background-color: #F2F2F2;
+          
+        }
+
+        .image-2 {
+            width: 100%;
+            height: 70%;
+        }
+
+        .image-3 {
+            width: 100%;
+            height: 70%;
+        }
+
+        .image-4 {
+            width: 100%;
+            height: 70%;
+        }
+
+        .image-5 {
+            width: 100%;
+            height: 70%;
+        }
+
+        .image-6 {
+            width: 100%;
+            height: 70%;
+        }
+        /*  Interview Section End */
+        /*  Picture Section Start */
+        .Picture-section-one{
+            width: 100%;
+            height: 100%;
+            background-color: #f2f2f2;
+            display: flex;
+            justify-content: space-between;
+        }
+        .picture-one{
+            width: 30%;
+            height: 70%;
+            background-color: #c4d42b;
+            margin-left:5% ;
+            background-image: url(https://spaces.is/media/pages/loversmagazine/79b0b07b3e-1723031519/scout-796x995-crop-q90.webp);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .picture-two{
+            width: 30%;
+            height: 70%;
+            background-color: #c4d42b;
+            background-image: url(https://spaces.is/media/pages/loversmagazine/8e1caa771f-1723031652/culture-ad-796x995-crop-q90.webp);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .picture-three{
+            width: 30%;
+            height: 70%;
+            background-color: #c4d42b;
+            background-image: url(https://spaces.is/media/pages/loversmagazine/3a15143e02-1723031724/studios-ad-796x995-crop-q90.webp);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-container">
+        <!-- header section start -->
+        <div class="header-container">
+            <div class="header-one">
+                <div class="header-name">
+                    <h2 style="color: white; text-align: center;"> &nbsp; &nbsp; &nbsp;"Lovers Magazine" </h2>
+                </div>
+            </div>
+            <div class="header-two">
+                <div class="nav-head-two">
+                    <div class="nav-bar-home"> Home </div>
+                    <div class="nav-bar-home"> Interviews </div>
+                    <div class="nav-bar-home"> Mixes </div>
+                    <div class="nav-bar-home"> 🔎︎ </div>
+                </div>
+            </div>
+        </div>
+        <!-- Header section End   -->
+        <!-- Home Section Start -->
+        <div class="home-main-container">
+            <div class="home-section-one">
+                <h1 style="font-size: 120px; font-weight: 100; font-family: Arial, Helvetica, sans-serif;"> &nbsp;LEENA
+                    <br> <span style="font-size: 120px; font-weight: 100;"> &nbsp;MURDESHWAR </span>
+                </h1>
+                <div class="home-section-one-1">
+                    <h2 style="font-weight: 200;  font-weight: 100; font-family: Arial, Helvetica, sans-serif;">Leena is
+                        a New York–based visual <br> designer and storyteller, weaving <br> bold cultural
+                        roots, thoughtful <br> strategy, and everyday play into her <br> work.</h2>
+                    <br>
+                    <h2>No. 610 ------------ Read Interview </h2>
+                </div>
+            </div>
+            <div class="home-section-two">
+                <div class="image-1">
+                    <img src="https://spaces.is/media/pages/loversmagazine/interviews/leena-murdeshwar/89fbde5cd6-1750048777/mgp_4261-1146x1604.4-crop-q90.webp"
+                        height="100%" width="100%">
+                </div>
+            </div>
+        </div>
+        <!-- Home-section-end -->
+        <!-- Interview Section start -->
+        <div class="interview-main-container">
+            <div class="interview-header">
+                <h4> &nbsp; &nbsp;Recent
+                    Interview----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+                </h4>
+            </div>
+            <div class="interview-cards">
+                <div class="interview-card-1">
+                    <div class="imaage-2">
+                        <img src="https://spaces.is/media/pages/loversmagazine/interviews/brennan-mcgrath/8a82b0dd01-1751989842/combo-headshots_0618250275-1-366x549-crop-q90.webp"
+                            width="100%" height="100%">
+                    </div>
+                    𝘍𝘖𝘜𝘕𝘋𝘌𝘙 <br>
+                    𝑩𝒓𝒆𝒏𝒏𝒂𝒏 𝑴𝒄𝑮𝒓𝒂𝒕𝒉 — 𝑪𝒐𝒎𝒃𝒐
+                    Brennan McGrath is a Partner at Combo, an independent strategy, design, and creative office in New
+                    York City.
+                </div>
+                <div class="interview-card-2">
+
+                    <div class="imaage-3">
+                        <img src="https://spaces.is/media/pages/loversmagazine/interviews/julian-herbst/827399e440-1754692532/me_full-366x549-crop-q90.webp"
+                            width="100%" height="100%">
+                    </div>
+                    𝘗𝘳𝘰𝘥𝘶𝘤𝘵 𝘋𝘦𝘴𝘪𝘨𝘯𝘦𝘳 <br>
+                    𝑱𝒖𝒍𝒊𝒂𝒏 𝑯𝒆𝒓𝒃𝒔𝒕 — 𝑨𝒕𝒕𝒊𝒐
+                    Julian Herbst is a German product designer creating digital experiences and brand identities for
+                    startups and wide …
+                </div>
+                <div class="interview-card-3">
+                    <div class="imaage-4">
+                        <img src="https://spaces.is/media/pages/loversmagazine/interviews/alex-khomutov/a90f10c547-1749600107/img_3240-366x549-crop-q90.webp"
+                            width="100%" height="100%">
+                    </div>
+                    𝘗𝘳𝘰𝘥𝘶𝘤𝘵 𝘋𝘦𝘴𝘪𝘨𝘯𝘦𝘳 <br>
+                    𝑨𝒍𝒆𝒙 𝑲𝒉𝒐𝒎𝒖𝒕𝒐𝒗 he/him — 𝑭𝒐𝒓𝒅 𝑴𝒐𝒕𝒐𝒓 𝑪𝒐𝒎𝒑𝒂𝒏𝒚
+                    Alex Khomutov is a Ukrainian Digital Product Designer currently living in Los Angeles and designing
+                    the future of …
+                </div>
+                <div class="interview-card-4">
+                    <div class="imaage-5">
+                        <img src="https://spaces.is/media/pages/loversmagazine/interviews/rauno-freiberg/c2daab0494-1751662321/rauno2-366x549-crop-48-6-39-2-q90.webp"
+                            width="100%" height="100%">
+                    </div>
+                    𝘋𝘦𝘴𝘪𝘨𝘯 𝘌𝘯𝘨𝘪𝘯𝘦𝘦𝘳 <br>
+                    𝑹𝒂𝒖𝒏𝒐 𝑭𝒓𝒆𝒊𝒃𝒆𝒓𝒈 — 𝑽𝒆𝒓𝒄𝒆𝒍
+                    Rauno Freiberg is an Estonian interaction designer. He currently works as a Staff Design Engineer at
+                    Vercel and was …
+                </div>
+                <div class="interview-card-5">
+                    <div class="imaage-6">
+                        <img src="https://spaces.is/media/pages/loversmagazine/interviews/amelie-schluter/bd528b6d74-1751632298/2025-amelie-profile-closeup_v2-366x549-crop-q90.webp"
+                            width="100%" height="100%">
+                    </div>
+                    𝘍𝘖𝘜𝘕𝘋𝘌𝘙 <br>
+                    𝑨𝒎𝒆𝒍𝒊𝒆 𝑺𝒄𝒉𝒍ü𝒕𝒆𝒓 — 𝑺𝑷𝑨𝑪𝑰𝑵𝑮
+                    Co-Founder of SPACING – a design venture studio creating a family of delightful AI software products
+                    and partnering …
+                </div>
+
+            </div>
+        </div>
+        <!-- Interview Section End -->
+         <!-- Picture Section Start -->
+        <div class="Picture-section-one">
+        <div class="picture-one"></div>
+        <div class="picture-two"></div>
+        <div class="picture-three"></div>
+        </div>
+    </div>
+</body>
+
+</html>
