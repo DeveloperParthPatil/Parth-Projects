@@ -274,6 +274,7 @@
             height: 100%;
             background-color: #9C7334;
         }
+
         .image-product-one {
             width: 100%;
             height: 100%;
@@ -291,6 +292,7 @@
             height: 5%;
             font-family: Arial, Helvetica, sans-serif;
             margin-bottom: 10%;
+            text-align: center;
         }
 
         .product-image {
@@ -303,6 +305,7 @@
         .product-one-info {
             width: 100%;
             font-size: 18px;
+            text-align: center;
         }
 
         .product-one-two {
@@ -324,37 +327,119 @@
             height: 100%;
             background-color: #f2f2f2;
         }
-        .product-two-one-one{
+
+        .product-two-one-one {
             width: 100%;
             height: 50%;
             background-color: #f2f2f2;
         }
-        .product-two-one-two{
+
+        .product-two-one-two {
             width: 100%;
             height: 50%;
-            background-color:  #f2f2f2;
+            background-color: #f2f2f2;
         }
+
         .product-two-two {
             width: 50%;
             height: 100%;
             background-color: #f2f2f2;
         }
-        .product-two-one-one-image{
+
+        .product-two-one-one-image {
             width: 100%;
             height: 50%;
 
         }
+
         /* Product Section End */
         /*  Table Section Start  */
-       .table{
+       .table-container{
+        width: 100%;
+        height:90%;
+        display: flex;
+        margin-top: 15%;
+        padding-left: 2%;
+       }
+       .section-one{
+        width: 20%;
+        height: 100%;
+        background-color: #c4d42b;
+        border-style: solid;
+        border-width: 2px 0.002px 2px 2px ;
+        border-color: #090909;
+       }
+       .section-two{
+        width: 80%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr ;
+        padding-right: 5%;
+       }
+       .box-1{
         width: 100%;
         height: 100%;
-       
-        margin-top: 15%;
+        background-color: aqua;
         border-style: solid;
-        border-color: black;
+        border-width: 2px;
+        border-color: #090909;
        }
-       
+       .box-2{
+        width: 100%;
+        height: 100%;
+        background-color: rgb(115, 201, 201);
+        border-style: solid;
+        border-width: 2px;
+        border-color: #090909;
+       }
+       .box-3{
+        width: 100%;
+        height: 100%;
+        background-color: rgb(255, 0, 0);
+        border-style: solid;
+        border-width: 2px;
+        border-color: #090909;
+       }
+       .box-4{
+        width: 100%;
+        height: 100%;
+        background-color: rgb(255, 0, 238);
+        border-style: solid;
+        border-width: 2px;
+        border-color: #090909;
+       }
+       .box-5{
+        width: 100%;
+        height: 100%;
+        background-color: rgb(255, 234, 0);
+        border-style: solid;
+        border-width: 2px;
+        border-color: #090909;
+       }
+       .box-6{
+        width: 100%;
+        height: 100%;
+        background-color: rgb(234, 0, 255);
+        border-style: solid;
+        border-width: 2px;
+        border-color: #090909;
+       }
+       .box-7{
+        width: 100%;
+        height: 100%;
+        background-color: rgb(60, 0, 255);
+        border-style: solid;
+        border-width: 2px;
+        border-color: #090909;
+       }
+       .box-8{
+        width: 100%;
+        height: 100%;
+        background-color: rgb(200, 255, 0);
+        border-style: solid;
+        border-width: 2px;
+        border-color: #090909;
+       }
     </style>
 </head>
 
@@ -510,21 +595,16 @@
                             <h1> &nbsp; &nbsp; &nbsp; F A N</h1>
                         </div>
                         <div class="product-one-caption">
-                            <span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Product Designer at Code and Theory</span>
+                            <span> Product Designer at Code and Theory</span>
                         </div>
                         <div class="product-image">
                             <img src="https://www.transparentpng.com/download/line/stRuJH-vertical-black-line-illustration-png.png"
                                 width="100%" height="100%">
                         </div>
                         <div class="product-one-info">
-                            <p> &nbsp; &nbsp; Ryan Fan is a New York-based product designer <br> &nbsp; &nbsp; &nbsp;
-                                and developer helping humans understand <br> &nbsp;&nbsp;&nbsp; machines better. He
-                                currently designs at Code <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;and
-                                Theory, and supports the design <br> &nbsp;&nbsp;community as an Awwwards jury and AIGA
-                                NY
-                                <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                mentor.
-
+                            <p>Ryan Fan is a New York-based product designer and developer helping humans understand
+                                machines better. He currently designs at Code and Theory, and supports the design
+                                community as an Awwwards jury and AIGA NY mentor.
                             </p>
                         </div>
                     </div>
@@ -538,40 +618,57 @@
                     <div class="product-two-one">
                         <div class="product-two-one-one">
                             <div class="product-two-one-one-image">
-                                <img src="https://spaces.is/media/pages/loversmagazine/interviews/ethan-chng/07e033d0d2-1745259721/portrait_main-366x366-crop-q90.webp" width="100%" height="100%">
+                                <img src="https://spaces.is/media/pages/loversmagazine/interviews/ethan-chng/07e033d0d2-1745259721/portrait_main-366x366-crop-q90.webp"
+                                    width="100%" height="100%">
                             </div>
                             <div>
-                                <p>  𝘗𝘳𝘰𝘥𝘶𝘤𝘵 𝘋𝘦𝘴𝘪𝘨𝘯𝘦𝘳 <br> 𝑬𝒕𝒉𝒂𝒏 𝑪𝒉𝒏𝒈 — 𝑰𝒏𝒔𝒕𝒂𝒈𝒓𝒂𝒎 <br></p>
-                                <p style="font-size: 20px;"> 𝘌𝘵𝘩𝘢𝘯 𝘊𝘩𝘯𝘨 𝘪𝘴 𝘢 𝘥𝘦𝘴𝘪𝘨𝘯𝘦𝘳 𝘢𝘵 𝘐𝘯𝘴𝘵𝘢𝘨𝘳𝘢𝘮 𝘧𝘰𝘤𝘶𝘴𝘦𝘥 𝘰𝘯 𝘴𝘺𝘴𝘵𝘦𝘮𝘴 𝘢𝘯𝘥 𝘪𝘯𝘵𝘦𝘳𝘢𝘤𝘵𝘪𝘰𝘯𝘴. 𝘏𝘦 𝘦𝘯𝘫𝘰𝘺𝘴 𝘥𝘳𝘦𝘢𝘮𝘪𝘯𝘨 𝘶𝘱 𝘪𝘥𝘦𝘢𝘴 𝘵𝘩𝘢𝘵 𝘴𝘰𝘭𝘷𝘦 …</p>
-                            </div>
-                        </div>
-                         <div class="product-two-one-two">
-                            <div class="product-two-one-one-image">
-                                <img src="https://spaces.is/media/pages/loversmagazine/interviews/andrey-rybin/30d46e50c3-1743313008/img_9639-kopija-366x366-crop-42-2-17-5-q90.webp" width="100%" height="100%">
-                            </div>
-                            <div>
-                                <p>  𝘗𝘳𝘰𝘥𝘶𝘤𝘵 𝘋𝘦𝘴𝘪𝘨𝘯𝘦𝘳 <br>  𝘼𝙣𝙙𝙧𝙚𝙮 𝙍𝙮𝙗𝙞𝙣 — 𝙃𝙪𝙢𝙖𝙣 <br></p>
-                                <p style="font-size: 20px;"> 𝘈𝘯𝘥𝘳𝘦𝘪 𝘙𝘺𝘣𝘪𝘯 𝘪𝘴 𝘢 𝘗𝘳𝘰𝘥𝘶𝘤𝘵 𝘢𝘯𝘥 𝘐𝘯𝘥𝘶𝘴𝘵𝘳𝘪𝘢𝘭 𝘋𝘦𝘴𝘪𝘨𝘯𝘦𝘳, 𝘣𝘰𝘳𝘯 𝘪𝘯 𝘓𝘪𝘱𝘦𝘵𝘴𝘬 𝘢𝘯𝘥 𝘣𝘢𝘴𝘦𝘥 𝘪𝘯 𝘠𝘦𝘳𝘦𝘷𝘢𝘯, 𝘸𝘪𝘵𝘩 𝘢 𝘧𝘰𝘤𝘶𝘴 𝘰𝘯 𝘮𝘪𝘯𝘪𝘮𝘢𝘭𝘪𝘴𝘮 𝘢𝘯𝘥 …</p>
-                            </div>
-                         </div>
-                    </div>
-                    <div class="product-two-two">
-                        <div class="product-two-one-one">
-                            <div class="product-two-one-one-image">
-                                <img src="https://spaces.is/media/pages/loversmagazine/interviews/andrea-pacheco/229c4fbb03-1746055185/dedeialn-366x366-crop-q90.webp" width="100%" height="100%">
-                            </div>
-                            <div>
-                                <p>  𝘗𝘳𝘰𝘥𝘶𝘤𝘵 𝘋𝘦𝘴𝘪𝘨𝘯𝘦𝘳 <br> 𝑨𝒏𝒅𝒓𝒆𝒂 𝑷𝒂𝒄𝒉𝒆𝒄𝒐 𝑺𝒉𝒆/𝑯𝒆𝒓(𝒔) — 𝑰𝒏𝒔𝒕𝒂𝒈𝒓𝒂𝒎 <br></p>
-                                <p style="font-size: 20px;"> 𝘈𝘯𝘥𝘳𝘦𝘢 𝘗𝘢𝘤𝘩𝘦𝘤𝘰 𝘪𝘴 𝘢 𝘱𝘳𝘰𝘥𝘶𝘤𝘵 𝘥𝘦𝘴𝘪𝘨𝘯𝘦𝘳 𝘱𝘢𝘴𝘴𝘪𝘰𝘯𝘢𝘵𝘦 𝘢𝘣𝘰𝘶𝘵 𝘣𝘶𝘪𝘭𝘥𝘪𝘯𝘨 𝘵𝘩𝘦 𝘧𝘶𝘵𝘶𝘳𝘦 𝘰𝘧 𝘴𝘰𝘤𝘪𝘢𝘭 𝘤𝘰𝘯𝘯𝘦𝘤𝘵𝘪𝘰𝘯. 𝘞𝘪𝘵𝘩 𝘢 𝘣𝘢𝘤𝘬𝘨𝘳𝘰𝘶𝘯𝘥 𝘪𝘯 …</p>
+                                <p> 𝘗𝘳𝘰𝘥𝘶𝘤𝘵 𝘋𝘦𝘴𝘪𝘨𝘯𝘦𝘳 <br> 𝑬𝒕𝒉𝒂𝒏 𝑪𝒉𝒏𝒈 — 𝑰𝒏𝒔𝒕𝒂𝒈𝒓𝒂𝒎 <br>
+                                </p>
+                                <p style="font-size: 20px;"> 𝘌𝘵𝘩𝘢𝘯 𝘊𝘩𝘯𝘨 𝘪𝘴 𝘢 𝘥𝘦𝘴𝘪𝘨𝘯𝘦𝘳 𝘢𝘵
+                                    𝘐𝘯𝘴𝘵𝘢𝘨𝘳𝘢𝘮 𝘧𝘰𝘤𝘶𝘴𝘦𝘥 𝘰𝘯 𝘴𝘺𝘴𝘵𝘦𝘮𝘴 𝘢𝘯𝘥
+                                    𝘪𝘯𝘵𝘦𝘳𝘢𝘤𝘵𝘪𝘰𝘯𝘴. 𝘏𝘦 𝘦𝘯𝘫𝘰𝘺𝘴 𝘥𝘳𝘦𝘢𝘮𝘪𝘯𝘨 𝘶𝘱 𝘪𝘥𝘦𝘢𝘴
+                                    𝘵𝘩𝘢𝘵 𝘴𝘰𝘭𝘷𝘦 …</p>
                             </div>
                         </div>
                         <div class="product-two-one-two">
                             <div class="product-two-one-one-image">
-                                <img src="https://spaces.is/media/pages/loversmagazine/interviews/barbara-lopez/7a3e970d3e-1743785370/barbara-366x366-crop-q90.webp" width="100%" height="100%">
+                                <img src="https://spaces.is/media/pages/loversmagazine/interviews/andrey-rybin/30d46e50c3-1743313008/img_9639-kopija-366x366-crop-42-2-17-5-q90.webp"
+                                    width="100%" height="100%">
                             </div>
                             <div>
-                                <p>  𝘗𝘳𝘰𝘥𝘶𝘤𝘵 𝘋𝘦𝘴𝘪𝘨𝘯𝘦𝘳 <br> 𝑩𝒂𝒓𝒃𝒂𝒓𝒂 𝑳𝒐𝒑𝒆𝒛 𝑺𝒉𝒆 / 𝑯𝒆𝒓 — 𝑺𝒒𝒖𝒂𝒓𝒆𝒔𝒑𝒂𝒄𝒆 <br></p>
-                                <p style="font-size: 20px;">Barbara is a Venezuelan Product Designer based in New York, currently working on the Frontsite team at Squarespace. </p>
+                                <p> 𝘗𝘳𝘰𝘥𝘶𝘤𝘵 𝘋𝘦𝘴𝘪𝘨𝘯𝘦𝘳 <br> 𝘼𝙣𝙙𝙧𝙚𝙮 𝙍𝙮𝙗𝙞𝙣 — 𝙃𝙪𝙢𝙖𝙣 <br></p>
+                                <p style="font-size: 20px;"> 𝘈𝘯𝘥𝘳𝘦𝘪 𝘙𝘺𝘣𝘪𝘯 𝘪𝘴 𝘢 𝘗𝘳𝘰𝘥𝘶𝘤𝘵 𝘢𝘯𝘥
+                                    𝘐𝘯𝘥𝘶𝘴𝘵𝘳𝘪𝘢𝘭 𝘋𝘦𝘴𝘪𝘨𝘯𝘦𝘳, 𝘣𝘰𝘳𝘯 𝘪𝘯 𝘓𝘪𝘱𝘦𝘵𝘴𝘬 𝘢𝘯𝘥
+                                    𝘣𝘢𝘴𝘦𝘥 𝘪𝘯 𝘠𝘦𝘳𝘦𝘷𝘢𝘯, 𝘸𝘪𝘵𝘩 𝘢 𝘧𝘰𝘤𝘶𝘴 𝘰𝘯 𝘮𝘪𝘯𝘪𝘮𝘢𝘭𝘪𝘴𝘮
+                                    𝘢𝘯𝘥 …</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-two-two">
+                        <div class="product-two-one-one">
+                            <div class="product-two-one-one-image">
+                                <img src="https://spaces.is/media/pages/loversmagazine/interviews/andrea-pacheco/229c4fbb03-1746055185/dedeialn-366x366-crop-q90.webp"
+                                    width="100%" height="100%">
+                            </div>
+                            <div>
+                                <p> 𝘗𝘳𝘰𝘥𝘶𝘤𝘵 𝘋𝘦𝘴𝘪𝘨𝘯𝘦𝘳 <br> 𝑨𝒏𝒅𝒓𝒆𝒂 𝑷𝒂𝒄𝒉𝒆𝒄𝒐 𝑺𝒉𝒆/𝑯𝒆𝒓(𝒔) —
+                                    𝑰𝒏𝒔𝒕𝒂𝒈𝒓𝒂𝒎 <br></p>
+                                <p style="font-size: 20px;"> 𝘈𝘯𝘥𝘳𝘦𝘢 𝘗𝘢𝘤𝘩𝘦𝘤𝘰 𝘪𝘴 𝘢 𝘱𝘳𝘰𝘥𝘶𝘤𝘵
+                                    𝘥𝘦𝘴𝘪𝘨𝘯𝘦𝘳 𝘱𝘢𝘴𝘴𝘪𝘰𝘯𝘢𝘵𝘦 𝘢𝘣𝘰𝘶𝘵 𝘣𝘶𝘪𝘭𝘥𝘪𝘯𝘨 𝘵𝘩𝘦
+                                    𝘧𝘶𝘵𝘶𝘳𝘦 𝘰𝘧 𝘴𝘰𝘤𝘪𝘢𝘭 𝘤𝘰𝘯𝘯𝘦𝘤𝘵𝘪𝘰𝘯. 𝘞𝘪𝘵𝘩 𝘢
+                                    𝘣𝘢𝘤𝘬𝘨𝘳𝘰𝘶𝘯𝘥 𝘪𝘯 …</p>
+                            </div>
+                        </div>
+                        <div class="product-two-one-two">
+                            <div class="product-two-one-one-image">
+                                <img src="https://spaces.is/media/pages/loversmagazine/interviews/barbara-lopez/7a3e970d3e-1743785370/barbara-366x366-crop-q90.webp"
+                                    width="100%" height="100%">
+                            </div>
+                            <div>
+                                <p> 𝘗𝘳𝘰𝘥𝘶𝘤𝘵 𝘋𝘦𝘴𝘪𝘨𝘯𝘦𝘳 <br> 𝑩𝒂𝒓𝒃𝒂𝒓𝒂 𝑳𝒐𝒑𝒆𝒛 𝑺𝒉𝒆 / 𝑯𝒆𝒓 —
+                                    𝑺𝒒𝒖𝒂𝒓𝒆𝒔𝒑𝒂𝒄𝒆 <br></p>
+                                <p style="font-size: 20px;">Barbara is a Venezuelan Product Designer based in New York,
+                                    currently working on the Frontsite team at Squarespace. </p>
                             </div>
                         </div>
                     </div>
@@ -579,26 +676,20 @@
             </div>
         </div>
         <!-- Product Section end -->
-         <!-- Table Section Start -->
-          <div class="table">
-            <table>
-                <tr>
-                    <td colspan="2"></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                </tr> <tr>
-                    <td></td>
-                    <td></td>
-                </tr> <tr>
-                    <td></td>
-                    <td></td>
-                </tr> <tr>
-                    <td></td>
-                    <td></td>
-                </tr>
-            </table>
+        <!-- Table Section Start -->
+          <div class="table-container">
+            <div class="section-one"></div>
+            <div class="section-two">
+                <div class="box-1"></div>
+                <div class="box-2"></div>
+                <div class="box-3"></div>
+                <div class="box-4"></div>
+                <div class="box-5"></div>
+                <div class="box-6"></div>
+                <div class="box-7"></div>
+                <div class="box-8"></div>
+
+            </div>
           </div>
     </div>
 </body>
