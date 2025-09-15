@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Grid Practise four</title>
+    <style>
+        body{
+            width: 100vw;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            width: 100%;
+            height: 100%;
+            display: grid;
+            grid-template-areas: 
+            "sidebar main-box main-box"
+            "header header header"
+            "footer footer footer";
+        }
+        .box-1{
+            background-color: aqua;
+            grid-area: main-box;
+        }
+        .box-2{
+            background-color: rgb(255, 102, 0);
+            grid-area: sidebar ;
+        }
+        .box-3{
+            background-color: rgb(8, 0, 255);
+            grid-area: header;
+        }
+        .box-4{
+            background-color: rgb(116, 41, 41);
+            grid-area: footer;
+        }
+        .box-5{
+            background-color: aqua;
+        }
+        .box-6{
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+   <div class="container">
+    <div class="box-1">1</div>
+    <div class="box-2">2</div>
+    <div class="box-3">3</div>
+    <div class="box-4">4</div>
+    <!-- <div class="box-5">5</div>
+    <div class="box-6">6</div> -->
+   </div> 
+</body>
+</html>
