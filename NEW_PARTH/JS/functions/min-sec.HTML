@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sec to Min</title>
+    <style>
+        body {
+            width: 100vw;
+            height: 100vh;
+        }
+
+        p {
+            width: 10%;
+            height: 10%;
+            background-color: aqua;
+        }
+    </style>
+</head>
+
+<body>
+    <input type="number" placeholder="Enter Second" id="text">
+    <button onclick="convert()">Convert</button>
+    <p id="display"> </p>
+    <script>
+        function convert() {
+            let Second = document.getElementById("text").value
+            let minute = Second / Number(60)
+             
+            document.getElementById("display").innerHTML = minute
+        }
+    </script>
+</body>
+
+</html>

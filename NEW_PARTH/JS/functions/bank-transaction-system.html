@@ -45,7 +45,7 @@
             width: 85%;
             height: 30%;
             background-color: #F9F3F3;
-            box-shadow: 2px 4px 2px 8px #D6E6F2;
+            box-shadow: 2px 4px 6px 8px   #D6E6F2;
             text-align: center;
             font-size: 32px;
             padding-bottom: 12px;
@@ -57,18 +57,21 @@
             height: 70%;
             background-color: #F7F7F7;
             display: flex;
+            gap: 50px ;
         }
 
         .deposit {
             width: 50%;
             height: 90%;
             background-color: #ae9e9e;
+            border-radius: 20px;
         }
 
         .withdraw {
             width: 50%;
             height: 90%;
             background-color: #ad5f5f;
+            border-radius: 20px;
         }
     </style>
 </head>
@@ -85,8 +88,12 @@
                 <p id="display-screen"></p>
             </div>
             <div class="one">
-                <div class="deposit"></div>
-                <div class="withdraw"></div>
+                <div class="deposit">
+                    <button> Deposit</button>
+                </div>
+                <div class="withdraw">
+                    <Button>Withdraw</Button>
+                </div>
             </div>
         </div>
     </div>
