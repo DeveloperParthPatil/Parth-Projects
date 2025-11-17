@@ -45,7 +45,7 @@
             width: 85%;
             height: 30%;
             background-color: #F9F3F3;
-            box-shadow: 2px 4px 6px 8px   #D6E6F2;
+            box-shadow: 2px 4px 6px 8px #D6E6F2;
             text-align: center;
             font-size: 32px;
             padding-bottom: 12px;
@@ -57,22 +57,91 @@
             height: 70%;
             background-color: #F7F7F7;
             display: flex;
-            gap: 50px ;
+            gap: 60px;
+            align-items: center;
+            justify-content: center;
         }
 
         .deposit {
-            width: 50%;
-            height: 90%;
-            background-color: #ae9e9e;
-            border-radius: 20px;
+            width: 45%;
+            height: 75%;
+            background-color: rgb(51, 174, 51);
+            border-radius: 5px;
+
         }
 
-        .withdraw {
-            width: 50%;
-            height: 90%;
-            background-color: #ad5f5f;
-            border-radius: 20px;
+        .d-one {
+            width: 100%;
+            height: 80%;
+            background-color: #ffffff;
+            display: flex;
+            flex-direction: column;
+         
         }
+        .amount{
+            width: 90%;
+            height:15% ;
+            margin-top: 10%;
+            font-size: 30px;
+            margin-left: 3%;
+        }
+        .input{
+            width: 80%;
+            height: 20%;
+            background-color: #D6E6F2;
+            margin-left: 3%;
+        }
+        .button{
+            width: 80%;
+            height: 20%;
+            background-color: #AAC4F5;
+            margin-top: 5%;
+            margin-left: 5%;
+        }
+        button{
+            width: 100%;
+            height: 100%;
+            background-color: rgb(56, 161, 56);
+            border-radius: 4px;
+        }
+
+        .name {
+            width: 100%;
+            height: 20%;
+            font-size: 40px;
+            color: white;
+            padding-left: 4%;
+        }
+        input{
+            width: 100%;
+            height: 100%;
+            border-radius: 5px;
+        }
+
+
+        .withdraw {
+            width: 45%;
+            height: 75%;
+            background-color: rgb(199, 34, 34);
+            border-radius: 5px;
+        }
+        .name-1 {
+            width: 100%;
+            height: 20%;
+            font-size: 40px;
+            color: white;
+            padding-left: 4%;
+        }
+
+        .w-one {
+            width: 100%;
+            height: 80%;
+            background-color: #ffffff;
+            display: flex;
+            flex-direction: column;
+        }
+
+        
     </style>
 </head>
 
@@ -89,10 +158,28 @@
             </div>
             <div class="one">
                 <div class="deposit">
-                    <button> Deposit</button>
+                    <div class="name">Deposit</div>
+                    <div class="d-one">
+                        <div class="amount">Amount</div>
+                        <div class="input">
+                            <input type="number">
+                        </div>
+                        <div class="button">
+                            <button> Deposit</button>
+                        </div>
+                    </div>
                 </div>
                 <div class="withdraw">
-                    <Button>Withdraw</Button>
+                    <div class="name-1">Withdraw</div>
+                    <div class="w-one">
+                        <div class="amount">Amount</div>
+                        <div class="input">
+                            <input type="number">
+                        </div>
+                        <div class="button">
+                            <button> Deposit</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
