@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank transaction system</title>
+    <style>
+        body {
+            width: 100vw;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+        }
+
+        .main-container {
+            width: 100%;
+            height: 100%;
+            background-color: #AAC4F5;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container {
+            width: 73%;
+            height: 88%;
+            background-color: #F7F7F7;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        .p {
+            width: 85%;
+            height: 2%;
+            font-size: 50px;
+            text-align: center;
+            padding-bottom: 15%;
+        }
+
+        .display {
+            width: 85%;
+            height: 30%;
+            background-color: #F9F3F3;
+            box-shadow: 2px 4px 6px 8px #D6E6F2;
+            text-align: center;
+            font-size: 32px;
+            padding-bottom: 12px;
+            margin-bottom: 5%;
+        }
+
+        .one {
+            width: 85%;
+            height: 70%;
+            background-color: #F7F7F7;
+            display: flex;
+            gap: 60px;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .deposit {
+            width: 45%;
+            height: 75%;
+            background-color: rgb(51, 174, 51);
+            border-radius: 5px;
+
+        }
+
+        .d-one {
+            width: 100%;
+            height: 80%;
+            background-color: #ffffff;
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        .amount {
+            width: 90%;
+            height: 15%;
+            margin-top: 10%;
+            font-size: 30px;
+            margin-left: 3%;
+        }
+
+        .input {
+            width: 80%;
+            height: 20%;
+            background-color: #D6E6F2;
+            margin-left: 3%;
+        }
+
+        .button {
+            width: 80%;
+            height: 20%;
+            background-color: #AAC4F5;
+            margin-top: 5%;
+            margin-left: 5%;
+        }
+
+        button {
+            width: 100%;
+            height: 100%;
+            background-color: rgb(56, 161, 56);
+            border-radius: 4px;
+        }
+
+        .name {
+            width: 100%;
+            height: 20%;
+            font-size: 40px;
+            color: white;
+            padding-left: 4%;
+        }
+
+        input {
+            width: 100%;
+            height: 100%;
+            border-radius: 5px;
+        }
+
+
+        .withdraw {
+            width: 45%;
+            height: 75%;
+            background-color: rgb(199, 34, 34);
+            border-radius: 5px;
+        }
+
+        .name-1 {
+            width: 100%;
+            height: 20%;
+            font-size: 40px;
+            color: white;
+            padding-left: 4%;
+        }
+
+        .w-one {
+            width: 100%;
+            height: 80%;
+            background-color: #ffffff;
+            display: flex;
+            flex-direction: column;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="container">
+            <div class="p">
+                <p>Bank Transaction System</p>
+            </div>
+
+            <div class="display">
+                <p>Current Balance:</p>
+                <p id="display-screen"></p>
+            </div>
+            <div class="one">
+                <div class="deposit">
+                    <div class="name">Deposit</div>
+                    <div class="d-one">
+                        <div class="amount">Amount</div>
+                        <div class="input">
+                            <input type="number" id="deposit" placeholder="Enter amount to deposit">
+                        </div>
+                        <div class="button">
+                            <button onclick="deposit()"> Deposit</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="withdraw">
+                    <div class="name-1">Withdraw</div>
+                    <div class="w-one">
+                        <div class="amount">Amount</div>
+                        <div class="input">
+                            <input type="number" id="withdraw" placeholder="Enter amount to withdraw">
+                        </div>
+                        <div class="button">
+                            <button onclick="withdraw()"> Withdraw</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+
+        let balance = 10000 ;
+        document.getElementById("display-screen").innerHTML = "₹" + balance ;
+
+        function deposit(){
+            let x =document.getElementById("deposit").value ;
+            balance = balance + Number(x)
+            document.getElementById("display-screen").innerHTML = "₹" + balance
+        }
+
+        function withdraw(){
+            let x =document.getElementById("withdraw").value ;
+            balance = balance - Number(x)
+            document.getElementById("display-screen").innerHTML = "₹" + balance
+        }
+    </script>
+</body>
+
+</html>
