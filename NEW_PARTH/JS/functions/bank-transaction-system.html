@@ -76,29 +76,33 @@
             background-color: #ffffff;
             display: flex;
             flex-direction: column;
-         
+
         }
-        .amount{
+
+        .amount {
             width: 90%;
-            height:15% ;
+            height: 15%;
             margin-top: 10%;
             font-size: 30px;
             margin-left: 3%;
         }
-        .input{
+
+        .input {
             width: 80%;
             height: 20%;
             background-color: #D6E6F2;
             margin-left: 3%;
         }
-        .button{
+
+        .button {
             width: 80%;
             height: 20%;
             background-color: #AAC4F5;
             margin-top: 5%;
             margin-left: 5%;
         }
-        button{
+
+        button {
             width: 100%;
             height: 100%;
             background-color: rgb(56, 161, 56);
@@ -112,7 +116,8 @@
             color: white;
             padding-left: 4%;
         }
-        input{
+
+        input {
             width: 100%;
             height: 100%;
             border-radius: 5px;
@@ -125,6 +130,7 @@
             background-color: rgb(199, 34, 34);
             border-radius: 5px;
         }
+
         .name-1 {
             width: 100%;
             height: 20%;
@@ -140,8 +146,6 @@
             display: flex;
             flex-direction: column;
         }
-
-        
     </style>
 </head>
 
@@ -162,10 +166,10 @@
                     <div class="d-one">
                         <div class="amount">Amount</div>
                         <div class="input">
-                            <input type="number">
+                            <input type="number" id="deposit" placeholder="Enter amount to deposit">
                         </div>
                         <div class="button">
-                            <button> Deposit</button>
+                            <button onclick="deposit()"> Deposit</button>
                         </div>
                     </div>
                 </div>
@@ -174,16 +178,33 @@
                     <div class="w-one">
                         <div class="amount">Amount</div>
                         <div class="input">
-                            <input type="number">
+                            <input type="number" id="withdraw" placeholder="Enter amount to withdraw">
                         </div>
                         <div class="button">
-                            <button> Deposit</button>
+                            <button onclick="withdraw()"> Withdraw</button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <script>
+
+        let balance = 10000 ;
+        document.getElementById("display-screen").innerHTML = "₹" + balance ;
+
+        function deposit(){
+            let x =document.getElementById("deposit").value ;
+            balance = balance + Number(x)
+            document.getElementById("display-screen").innerHTML = "₹" + balance
+        }
+
+        function withdraw(){
+            let x =document.getElementById("withdraw").value ;
+            balance = balance - Number(x)
+            document.getElementById("display-screen").innerHTML = "₹" + balance
+        }
+    </script>
 </body>
 
 </html>
