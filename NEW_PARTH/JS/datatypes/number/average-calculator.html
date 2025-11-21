@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Average Calculator</title>
+    <style>
+        body {
+            width: 100vw;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .main-container {
+            width: 30%;
+            height: 65%;
+            background-color: antiquewhite;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 40px;
+        }
+
+        p {
+            font-size: 40px;
+            text-align: center;
+        }
+
+        .one {
+            width: 75%;
+            height: 15%;
+            margin-right: 7%;
+        }
+
+        .two {
+            width: 75%;
+            height: 15%;
+            margin-right: 7%;
+        }
+
+        .three {
+            width: 75%;
+            height: 15%;
+            margin-right: 7%;
+        }
+
+        .sum {
+            width: 80%;
+            height: 10%;   
+        }
+        button{
+            width: 100%;
+            height: 100%;
+            border-radius: 7px;
+            background-color: #BB6653;
+            border: solid 2px black;
+        }
+        .result{
+            width: 80%;
+            height: 15%;
+            margin-bottom: 7%;
+        }
+        .display{
+            width: 100%;
+            height: 100%; 
+            text-align: center;
+            font-size: 25px;
+            background-color: #A1CAE2;
+        }
+        .label{
+            width: 100%;
+            height: 50%;
+            font-size: 20px;
+        }
+        .input{
+            width: 100%;
+            height: 50%;
+        }
+        input{
+            width: 80%;
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-container">
+        <p>Average Calculator</p>
+        <div class="one">
+            <div class="label">
+                <b>First Number :</b>
+            </div>
+            <div class="input">
+                <input type="number" id="one" placeholder="Enter first number">
+            </div>
+        </div>
+        <div class="two">
+            <div class="label">
+                <b>Second Number :</b>
+            </div>
+            <div class="input">
+                <input type="number" id="two" placeholder="Enter second number">
+            </div>
+        </div>
+        <div class="three">
+            <div class="label">
+                <b>Third Number :</b>
+            </div>
+            <div class="input">
+                <input type="number" id="three" placeholder="Enter third number">
+            </div>
+        </div>
+        <div class="sum">
+            <button onclick="sum()">Calculate</button>
+        </div>
+        <div class="result">
+            <span class="display" id="display"></span>
+        </div>
+    </div>
+    <script>
+        function sum(){
+            let x = document.getElementById("one").value
+            let y = document.getElementById("two").value
+            let z = document.getElementById("three").value
+            let c = Number(x) + Number(y) + Number(z) / 3
+            document.getElementById("display").innerHTML= "The Average of " + x + "," + y + "," + "and " + z + " is " + c
+        }
+    </script>
+</body>
+
+</html>

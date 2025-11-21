@@ -5,21 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simple intrest</title>
 </head>
+<style>
+    body{
+        width: 100vw;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: aliceblue ;
+    }
+    .main-container{
+        width: 30%;
+        height: 40%;
+        background-color: aqua;
+    }
+    .name{
+        text-align: center;
+        font-size: 40px;
+    }
+</style>
 <body>
+    
+    <div class="main-container">
+        <p class="name">Simple Intrest</p>
+        
+        <div class="one">
     <label> Principal :</label>
     <input type="number" id="principal" placeholder="Enter principal">
-    <br>
-    <br>
+</div>
+<div class="two">
     <label> Time :</label>
     <input type="number" id="time" placeholder="Enter time">
-    <br>
-    <br>
+</div>
+<div class="three">
     <label> Rate :</label>
     <input type="number" id="rate" placeholder="Enter rate">
-   <br>
-   <br> 
+</div>
+<div class="calculate">
     <button onclick="sum()"> Calculate </button>
+</div>
+<div class="display"> 
     <p id="display"></p>
+</div>
+</div>
     <script>
         function sum(){
         let p = document.getElementById("principal").value
@@ -29,18 +59,18 @@
         document.getElementById("display").innerHTML = "Simple Intrest is : " + sum
         }
 
-        let a = 10
-        let b = 20
-        let c = 30
+        // let a = 10
+        // let b = 20
+        // let c = 30
     
-         let d = a
-         a=b
-         b=c
-         c=d
+        //  let d = a
+        //  a=b
+        //  b=c
+        //  c=d
 
-        alert("C = " + a )
-        alert("B = " + b)
-        alert("A = " + c)
+        // alert("C = " + a )
+        // alert("B = " + b)
+        // alert("A = " + c)
     </script>
 </body>
 </html>
