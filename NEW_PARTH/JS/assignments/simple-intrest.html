@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple intrest</title>
+</head>
+<style>
+    body {
+        width: 100vw;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: aliceblue;
+    }
+
+    .main-container {
+        width: 30%;
+        height: 65%;
+        background-color: #D7C097;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .name {
+        text-align: center;
+        font-size: 40px;
+    }
+    .one{
+        width: 75%;
+        height: 15%;
+        margin-left: 5%;
+        display: flex;
+        flex-direction: column  ;
+    }
+    .two{
+        width: 75%;
+        height: 15%;
+        margin-left: 5%;
+        display: flex;
+        flex-direction: column  ;
+    }
+    .three{
+        width: 75%;
+        height: 15%;
+        margin-left: 5%;
+        display: flex;
+        flex-direction: column  ;
+    }
+    .label{
+        width: 100%;
+        height: 100%;
+        font-size: 25px;
+    }
+    .input{
+        width: 100%;
+        height: 100%;
+    }
+    .calculate{
+        width: 80%;
+        height: 10%;
+        margin-left: 7%;
+        border-radius: 3px;
+    }
+    button{
+        width: 100%;
+        height: 100%;
+        background-color: #E2852E;
+        border: black solid 3px;
+        border-radius: 3px;
+    }
+    input{
+        width: 90%;
+        height: 100%;
+    }
+    .display{
+        width: 90%;
+        height: 10%;
+        margin-left: 20%;
+    }
+     span{
+        width: 100%;
+        height: 100%;
+        background-color: #D34E4E;
+        text-align: center;
+        font-size: 30px;
+    }
+    
+</style>
+
+<body>
+
+    <div class="main-container">
+        <p class="name">Simple Intrest</p>
+        <div class="one">
+            <div class="label">
+                <label> Principal :</label>
+            </div>
+            <div class="input">
+                <input type="number" id="principal" placeholder="Enter principal">
+            </div>
+        </div>
+        <div class="two">
+            <div class="label">
+                <label> Time :</label>
+            </div>
+            <div class="input">
+                <input type="number" id="time" placeholder="Enter time">
+            </div>
+
+        </div>
+        <div class="three">
+            <div class="label">
+                <label> Rate :</label>
+            </div>
+            <div class="input">
+                <input type="number" id="rate" placeholder="Enter rate">
+            </div>
+        </div>
+        <div class="calculate">
+            <button onclick="sum()"> Calculate </button>
+        </div>
+        <div class="display">
+            <span class="d" id="display"></span>
+        </div>
+    </div>
+    <script>
+        function sum() {
+            let p = document.getElementById("principal").value
+            let t = document.getElementById("principal").value
+            let r = document.getElementById("principal").value
+            let sum = Number(p) * Number(t) * Number(r) / 100
+            document.getElementById("display").innerHTML = "Simple Intrest is : " + sum
+        }
+
+        // let a = 10
+        // let b = 20
+        // let c = 30
+
+        //  let d = a
+        //  a=b
+        //  b=c
+        //  c=d
+
+        // alert("C = " + a )
+        // alert("B = " + b)
+        // alert("A = " + c)
+    </script>
+</body>
+
+</html>
