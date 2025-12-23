@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sum Difference Calculator </title>
+    <style>
+        body {
+            width: 100vw;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+               background-color: #F5F2F2
+        }
+
+        .main-container {
+            width: 30%;
+            height: 70%;
+            border-radius: 10px;
+            background-color: #ffffff;
+        }
+
+        .head {
+            width: 100%;
+            height: 20%;
+            font-size: 40px;
+            text-align: center;
+            padding-top: 5%;
+        }
+
+        .input-one{
+            width: 100%;
+            height: 15%;
+            padding-top: 5%;
+            margin-left: 4%;
+        }
+
+        .input-two{
+            width: 100%;
+            height: 15%;
+            margin-left: 4%;
+
+        }
+
+        .button {
+            width: 100%;
+            height: 15%;
+            margin-left: 4%;
+
+        }
+
+        .display {
+            width: 100%;
+            height: 35%;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            margin-left: 4%;
+
+        }
+        button{
+            width: 90%;
+            height: 50%;
+            background-color: rgb(69,68 ,166);
+            border-radius: 6px;
+            border: 0px white solid;
+            margin-top: 5%;
+            font-size: 15px;
+            color: white;
+        }
+        .dis-one{
+            width: 86%;
+            height: 20%;
+            background-color: #E3E3E3;
+            border-radius: 8px;
+            padding-top: 3%;
+            padding-left: 4%;
+            font-size: 20px;
+        }
+        .dis-two{
+            width: 86%;
+            height: 20%;
+            background-color: #E3E3E3;
+            border-radius: 8px;
+            padding-top: 3%;
+            padding-left: 4%;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="head"> Sum and Difference Calculator</div>
+        <div class="input-one">
+            <span style="font-size: 20px;">First Number:</span>
+            <br>
+            
+            <input type="number" id="input-1" style="width: 50%; height: 25%;">
+        </div>
+        <div class="input-two">
+            <span style="font-size: 20px;">Second Number:</span>
+            <br>
+            
+            <input type="number" id="input-2" style="width: 50%; height: 25%;">
+        </div>
+        <div class="button">
+            <button onclick="button()">Calculate</button>
+        </div>
+        <div class="display" >
+            <div class="dis-one" id="display-1">Sum :</div>
+            <div class="dis-two" id="display-2"> Difference :</div>
+
+        </div>
+    </div>
+    <script>
+        function button() {
+            let x = document.getElementById("input-1").value
+            let y = document.getElementById("input-2").value
+            let c = Number(x) + Number(y)
+            document.getElementById("display-1").innerHTML = " Sum: " + x + " + " + y + " = " + c
+            let q = Number(x) - Number(y)
+            document.getElementById("display-2").innerHTML = " Difference: "  + x + " - " + y + " = "  + q
+        }
+    </script>
+</body>
+
+</html>
