@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monthly Budget </title>
+    <style>
+        body {
+            width: 100vw;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        .main-container {
+            width: 40%;
+            height: 60%;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            background-color: #FFE2E2;
+            border-radius: 6px;
+        }
+
+        .name {
+            width: 100%;
+            height: 10%;
+            text-align: center;
+            font-size: 50px;
+        }
+
+        .container {
+            width: 100%;
+            height: 35%;
+            display: flex;
+        }
+
+        .income {
+            width: 50%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            padding-left: 2%;
+        }
+
+        .expense {
+            width: 50%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .button{
+            width: 40%;
+            height: 7%;
+            margin-left: 30%;
+            margin-top: 3%;
+        }
+        button{
+            width: 100%;
+            height: 100%;
+            border-radius: 5px;
+            background-color: #F8E8EE;
+            border: solid 1px #F8E8EE;
+            font-size: 18px;
+        }
+           span {
+            font-size: 23px;
+      
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="name"> Monthly budget</div>
+        <div class="container">
+            <div class="income">
+                <span style="margin-left: 35%; font-size: 30px;">Income</span>
+                <div class="profit">
+                    <span style="font-size: 20px;">Profit:</span>
+                    <input type="number" id="profit" style="margin-left: 7%;">
+                </div>
+                <div class="rent">
+                    <span style="font-size: 20px;">Rent:</span>
+                    <input type="number" id="rent" style="margin-left: 9%;">
+                </div>
+                <div class="farming">
+                    <span style="font-size: 20px;">Farming:</span>
+                    <input type="number" id="farming">
+                </div>
+            </div>
+            <div class="expense">
+                <span style="margin-left: 35%; font-size: 30px;">Expense</span>
+                <div class="daily-needs">
+                    <span style="font-size: 20px;">Daily needs:</span>
+                    <input type="number" id="daily-needs">
+                </div>
+                <div class="food">
+                    <span style="font-size: 20px;">Food:</span>
+                    <input type="number" id="food" style="margin-left: 16%;">
+                </div>
+                <div class="electricity">
+                    <span style="font-size: 20px;">Electricity/ <br>Fuel:</span>&nbsp;
+                    <input type="number" id="electricity" style="margin-left: 16%;">
+                </div>
+            </div>
+        </div>
+        <div class="button">
+            <button onclick="button()">Calculate my monthly budget</button>
+        </div>
+        <div class="display">
+            <span style="margin-left: 2%;">Total Income:</span> <span  id="t-income"></span><br>
+            <span style="margin-left: 2%;">Total Expense:</span> <span  id="t-expense"></span><br>
+            <span style="margin-left: 2%;">Total Savings:</span> <span  id="t-savings"></span><br>
+            <span style="margin-left: 2%;">Expense per day:</span> <span  id="expense"></span><br>
+        </div>
+    </div>
+    <script>
+        function button(){
+            let x = document.getElementById("profit").value ;
+            let y = document.getElementById("rent").value
+            let z = document.getElementById("farming").value;
+
+            let w = Number(x) + Number(y) + Number(z);
+            document.getElementById("t-income").innerHTML = "₹" + w;
+
+            let a = document.getElementById("daily-needs").value ;
+            let b = document.getElementById("food").value
+            let c = document.getElementById("electricity").value;
+
+            let d = Number(a) + Number(b) + Number(c);
+            document.getElementById("t-expense").innerHTML = "₹" + d;
+
+            let e = Number(w) - Number(d);
+            document.getElementById("t-savings").innerHTML = "₹" + e;
+
+            let f = Number(d) / 30
+            document.getElementById("expense").innerHTML = "₹" + f;
+
+        }
+    </script>
+</body>
+
+</html>
