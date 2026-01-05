@@ -81,9 +81,8 @@
             <input type="number" id="ori" style="margin-left: 3%; width: 40%;">
         </div>
         <div class="Deduction">
-            <span style="margin-left: 3%; font-size:19px;">Deducted Amount:</span>
-            <br>
-            <input type="number" id="Deducted" style="margin-left: 3%; width: 40%;">
+            <span style="margin-left: 3%; font-size:19px;">Deducted Amount:2000 </span>
+           
         </div>
         <div class="button">
             <button onclick="calculate()"> Calculate Total Amount</button>
@@ -96,9 +95,9 @@
     <script>
         function calculate() {
             let x = document.getElementById("ori").value
-            let y = document.getElementById("Deducted").value
-            let z = Number(x) - Number(y)
-            document.getElementById("display").innerHTML =  "₹" + z 
+            let y = 2000
+            x -= y
+            document.getElementById("display").innerHTML =  "₹" + x
         }
     </script>
 </body>
