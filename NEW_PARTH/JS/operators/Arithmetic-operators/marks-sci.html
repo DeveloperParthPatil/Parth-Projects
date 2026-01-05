@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marks Calculator in Science Subject</title>
+    <style>
+        body {
+            width: 100vw;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(255, 221, 221);
+        }
+
+        .main-container {
+            width: 30%;
+            height: 50%;
+            background-color: #EEEEEE;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            border-radius: 10px;
+        }
+
+        .name {
+            margin-top: 2%;
+            width: 100%;
+            height: 15%;
+            text-align: center;
+            font-size: 40px;
+        }
+
+        .sci-1 {
+            width: 100%;
+            height: 15%;
+        }
+
+        .sci-2 {
+            width: 100%;
+            height: 15%;
+        }
+
+        .button {
+            width: 100%;
+            height: 10%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .display {
+            width: 100%;
+            height: 20%;
+        }
+
+        button {
+            width: 60%;
+            height: 80%;
+            font-size: 15px;
+            border: solid 2px #189BFA;
+            background-color: #189BFA;
+            border-radius: 6px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="name">Marks Calculator</div>
+        <div class="sci-1">
+            <span style="margin-left: 3%; font-size:19px;">Enter Science-1 marks:</span>
+            <br>
+            <input type="number" id="sci-1" style="margin-left: 3%;">
+        </div>
+        <div class="sci-2">
+            <span style="margin-left: 3%; font-size:19px;">Enter Science-2 marks:</span>
+            <br>
+            <input type="number" id="sci-2" style="margin-left: 3%;">
+        </div>
+        <div class="button">
+            <button onclick="calculate()"> Calculate Total marks</button>
+        </div>
+        <div class="display">
+            <h2 style="margin-left: 3%;" id="display"> Total Marks:</h2>
+        </div>
+    </div>
+    <script>
+        function calculate() {
+            let x = document.getElementById("sci-1").value
+            let y = document.getElementById("sci-2").value
+            let z = Number(x) + Number(y)
+            document.getElementById("display").innerHTML = "<h3>" +"Total Marks : " + z + "</h3>"
+        }
+    </script>
+</body>
+
+</html>

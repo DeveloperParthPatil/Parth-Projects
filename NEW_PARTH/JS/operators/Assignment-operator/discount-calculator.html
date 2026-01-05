@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discount Calculator</title>
+    <style>
+        body {
+            width: 100vw;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color:#FFEAD8;
+        }
+
+        .main-container {
+            width: 30%;
+            height: 50%;
+            background-color: #A6B1E1;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            border-radius: 10px;
+        }
+
+        .name {
+            margin-top: 2%;
+            width: 100%;
+            height: 15%;
+            text-align: center;
+            font-size: 40px;
+        }
+
+        .marked {
+            width: 100%;
+            height: 15%;
+        }
+
+        .discount {
+            width: 100%;
+            height: 15%;
+        }
+
+        .button {
+            width: 100%;
+            height: 10%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .display {
+            width: 100%;
+            height: 20%;
+        }
+
+        button {
+            width: 60%;
+            height: 80%;
+            font-size: 16px;
+            border: solid 2px #189BFA;
+            background-color: #189BFA;
+            border-radius: 6px;
+        }
+        span{
+            font-size: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="name">Discount Calculator</div>
+        <div class="marked">
+            <span style="margin-left: 3%; font-size:19px;">Marked Price:</span>
+            <br>
+            <input type="number" id="marked" style="margin-left: 3%; width: 35%;">
+        </div>
+        <div class="discount">
+            <span style="margin-left: 3%; font-size:19px;">Discount:</span>
+            <br>
+            <input type="number" id="discount" style="margin-left: 3%; width: 35%;">
+        </div>
+        <div class="button">
+            <button onclick="calculate()"> Calculate Selling Price</button>
+        </div>
+        <div class="display">
+            <span style="margin-left: 3%;" >Selling Price:</span> 
+            <span id="display"></span>
+        </div>
+    </div>
+    <script>
+        function calculate() {
+            let x = document.getElementById("marked").value
+            let y = document.getElementById("discount").value
+            let z = x * [ ( 100 - y)]/100
+            document.getElementById("display").innerHTML =  "₹" + z 
+        }
+    </script>
+</body>
+
+</html>

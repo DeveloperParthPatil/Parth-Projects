@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salary Calculator</title>
+    <style>
+        body {
+            width: 100vw;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color:#FFEAD8;
+        }
+
+        .main-container {
+            width: 30%;
+            height: 50%;
+            background-color: #A6B1E1;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            border-radius: 10px;
+        }
+
+        .name {
+            margin-top: 2%;
+            width: 100%;
+            height: 15%;
+            text-align: center;
+            font-size: 40px;
+        }
+
+        .Original {
+            width: 100%;
+            height: 15%;
+        }
+
+        .Deduction {
+            width: 100%;
+            height: 15%;
+        }
+
+        .button {
+            width: 100%;
+            height: 10%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .display {
+            width: 100%;
+            height: 20%;
+        }
+
+        button {
+            width: 60%;
+            height: 80%;
+            font-size: 16px;
+            border: solid 2px #189BFA;
+            background-color: #189BFA;
+            border-radius: 6px;
+        }
+        span{
+            font-size: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="name">Salary Calculator</div>
+        <div class="Original">
+            <span style="margin-left: 3%; font-size:19px;">Original Salary:</span>
+            <br>
+            <input type="number" id="ori" style="margin-left: 3%; width: 40%;">
+        </div>
+        <div class="Deduction">
+            <span style="margin-left: 3%; font-size:19px;">Deducted Amount:</span>
+            <br>
+            <input type="number" id="Deducted" style="margin-left: 3%; width: 40%;">
+        </div>
+        <div class="button">
+            <button onclick="calculate()"> Calculate Total Amount</button>
+        </div>
+        <div class="display">
+            <span style="margin-left: 3%;" > Total Amount:</span> 
+            <span id="display"></span>
+        </div>
+    </div>
+    <script>
+        function calculate() {
+            let x = document.getElementById("ori").value
+            let y = document.getElementById("Deducted").value
+            let z = Number(x) - Number(y)
+            document.getElementById("display").innerHTML =  "₹" + z 
+        }
+    </script>
+</body>
+
+</html>
