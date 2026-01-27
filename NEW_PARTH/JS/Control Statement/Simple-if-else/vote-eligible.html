@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voter eligibility</title>
+    <style>
+        body {
+            width: 100vw;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #C8AAAA;
+        }
+
+        .main-container {
+            width: 29%;
+            height: 50%;
+            background-color:#0C7779;
+            border-radius: 7px;
+        }
+
+        .name {
+            font-size: 40px;
+            text-align: center;
+            font-weight: 0;
+            margin-top: 2%;
+        }
+
+        input {
+            width: 50%;
+            height: 5%;
+            margin-left: 3%;
+
+        }
+
+        button {
+            width: 70%;
+            height: 10%;
+            background-color: lightcoral;
+            border: 2px solid lightcoral;
+            border-radius: 6px;
+            margin-left: 13%;
+            margin-top: 15%;
+        }
+
+        p {
+            font-size: 20px;
+        }
+
+        .display {
+            margin-top: 12%;
+            font-size: 30px;
+            margin-left: 3%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="name"> Check Vote eligibility</div>
+        <p style="margin-left: 3%;">Enter your Age:</p>
+        <input type="number" id="check">
+        <br>
+        <button onclick="button()"> Check Eligibility</button>
+        <div class="display">
+            <span id="display"></span>
+        </div>
+    </div>
+</body>
+<script>
+    function button ()  {
+    let x = document.getElementById("check").value
+    let y = 18
+    if( x >= y){
+        document.getElementById("display").innerHTML =  "You are Eligible to vote " 
+    }
+    else {
+    document.getElementById("display").innerHTML =  "You are not Eligible to vote " 
+    }
+}   
+</script>
+
+</html>
