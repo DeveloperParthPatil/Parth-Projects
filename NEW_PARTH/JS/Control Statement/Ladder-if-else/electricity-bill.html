@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electricity Bill Calculator </title>
+</head>
+<body>
+    <script>
+        function bill(){
+            let units = Number(prompt("Enter Units"))
+            if (units <=50){
+                let charges =units * 7
+                console.log("Your Total bill is : " + charges)
+            }
+            else if (units <=150){
+                let charges = 50 * 7 + (units -50) *8 
+                console.log("Your Total bill is : " + charges)
+            }
+            else if (units <=250){
+                let charges = 50 * 7 +  100*8 +(units - 250) *10
+                console.log("Your Total bill is : " + charges)
+            }
+            else{
+                let charges = 50*7 + 100*8 + 100 *10 +(units - 250 ) * 12
+                console.log("Your Total bill is : " + charges)
+            }
+        }
+        bill()
+    </script>
+</body>
+</html>
